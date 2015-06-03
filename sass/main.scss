@@ -1,2 +1,84 @@
-@import bourbon;
-@import neat;
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+* {
+  border-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 62.5%;
+}
+section {
+ margin-bottom: 20px;
+}
+
+ul {
+  float: left;
+  list-style-type: none;
+  margin-top: 28px;
+  padding-left: 28px;
+  }
+
+.day {
+  font-size: 1.4em;
+  color: #A4BDCC;
+  padding-left: 5px;
+}
+
+.time {
+  font-size: 3em;
+  color: #59B3E6;
+}
+
+.icon {
+  float: right;
+  margin-right: 35px;
+  margin-top: 50px;
+  // .fa.fa-circle.fa-stack-2x {
+  //   font-size: 5.5em;
+  //   color: #6BBBEA;
+  // }
+
+  .fa {
+    font-size: 2.5em;
+    color: black;
+    // background-color: #6BBBEA;
+  }
+
+
+  }
+
+.content::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #6BBBEA transparent;
+  position: relative;
+  top: -30px;
+  left: 6px;
+}
+
+.content {
+  clear: both;
+  background-color: #6BBBEA;
+  color: white;
+  padding: 10px;
+  margin: 0 20px;
+  border-radius: 5px;
+
+
+    h3 {
+    font-size: 3em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  p {
+    font-size: 1.8em;
+  }
+}
+
+
