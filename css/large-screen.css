@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+body {
+  width: 100%;
+  margin-top: 20px; }
+
+.side {
+  width: 20%;
+  float: left;
+  display: inline-block; }
+  .side .day {
+    font-size: 1.6em;
+    padding-left: 42px; }
+  .side .time {
+    font-size: 5.5em; }
+  .side .icon {
+    float: left;
+    margin-top: 10px;
+    margin-left: 30px; }
+
+.content::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #6BBBEA transparent transparent;
+  position: relative;
+  top: 10px;
+  left: -20px; }
+
+.content {
+  clear: both;
+  width: 55%;
+  display: inline-block; }

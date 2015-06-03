@@ -3,15 +3,17 @@
 </ul> --}}
 {{#each timelines}}
   <section>
-    <div class="date">
-      <ul>
-        <li class="day">{{day}}</li>
-        <li class="time">{{time}}</li>
-      </ul>
-    </div>
-    <div class="icon">
-      {{!-- <i class="fa fa-circle fa-stack-2x"></i> --}}
-      <i class="fa {{icon}}"></i>
+    <div class="side">
+      <div class="date">
+        <ul>
+          <li class="day">{{day}}</li>
+          <li class="time">{{time}}</li>
+        </ul>
+      </div>
+      <div class="icon">
+        {{!-- <i class="fa fa-circle fa-stack-2x"></i> --}}
+        <i class="fa {{icon}}"></i>
+      </div>
     </div>
     <div class="content">
       <h3>{{title}}</h3>
