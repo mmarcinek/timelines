@@ -1,4 +1,16 @@
 {{!-- <ul>
   <li>{{#each}}
 </ul> --}}
-<h1>{{day}}</h1>
+{{#each Post}}
+  <section>
+    <ul>
+      <li class="day">{{day}}</li>
+      <li class="time">{{time}}</li>
+    </ul>
+    <i class="{{icon}}"</i>
+    <div class="content">
+      <h3>{{title}}</h3>
+      <p>{{text}}</p>
+    </div>
+  </section>
+{{/each}}
